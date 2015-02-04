@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
 /**
  * Reset some basic elements
  */
@@ -14,7 +15,7 @@ body {
   font-family: Roboto;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.87);
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%; }
@@ -58,7 +59,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300; }
+  font-weight: 400; }
 
 /**
  * Links
