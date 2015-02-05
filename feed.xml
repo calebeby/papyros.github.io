@@ -6,9 +6,126 @@
 </description>
     <link>http://papyros.io/</link>
     <atom:link href="http://papyros.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Feb 2015 04:24:57 +0000</pubDate>
-    <lastBuildDate>Thu, 05 Feb 2015 04:24:57 +0000</lastBuildDate>
+    <pubDate>Thu, 05 Feb 2015 22:04:41 +0000</pubDate>
+    <lastBuildDate>Thu, 05 Feb 2015 22:04:41 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Monthly Status Update 1/15</title>
+        <description>&lt;p&gt;I had originally planned to do weekly status updates, but I’ve been busy focusing on actual development and normal life, so I’ve only had time to do one update so far. So, we’ll turn the updates into monthly updates instead. I’ll start off by calling this the January update so as to get another one in at the end of February.&lt;/p&gt;
+
+&lt;p&gt;The biggest news since our first update is that we’ve settled on a new name - Papyros! (The old name, Quantum OS, was trademarked by an existing company). Our website is now &lt;a href=&quot;http://papyros.io&quot;&gt;papyros.io&lt;/a&gt;, and you can follow us on &lt;a href=&quot;https://plus.google.com/113262712329378697012&quot;&gt;Google+&lt;/a&gt; or join our &lt;a href=&quot;https://plus.google.com/u/0/communities/109966288908859324845&quot;&gt;Google+ community&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;new-team-members&quot;&gt;New Team Members&lt;/h3&gt;
+
+&lt;p&gt;I’d like to welcome several new designers and developers to our team who have shown continued great contributions in code and designs.&lt;/p&gt;
+
+&lt;p&gt;Our design team consists of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Myself, Michael Spencer (well, I’m a developer, not a professional designer, but I care a lot about design)&lt;/li&gt;
+  &lt;li&gt;Josh Gray&lt;/li&gt;
+  &lt;li&gt;Christopher Spencer&lt;/li&gt;
+  &lt;li&gt;Andrea Del Sarto&lt;/li&gt;
+  &lt;li&gt;Christoph Laier&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And our development team consists of:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Michael Spencer (that’s me again)&lt;/li&gt;
+  &lt;li&gt;Bogdan Cuza&lt;/li&gt;
+  &lt;li&gt;Ricardo Vieira&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to this awesome team and to everyone else who has show interest, given support, or contributed to the project.&lt;/p&gt;
+
+&lt;h3 id=&quot;overall-os-progress&quot;&gt;Overall OS progress&lt;/h3&gt;
+
+&lt;p&gt;Work on the overall OS is progressing nicely. Our design team has done some great mockups for the installer and some of the core apps, including the web browser and calculator. We also have our first packages available in the AUR, which you can install as &lt;a href=&quot;https://aur.archlinux.org/packages/papyros-shell/&quot;&gt;papyros-shell&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Work is also starting on a build server to host packages so users don’t have to compile everything from scratch, which takes a very long time, especially in VirtualBox. Unfortunately, there are some issues with the build tooling on the server, but hopefully that can be worked on soon.&lt;/p&gt;
+
+&lt;h3 id=&quot;material-design-framework&quot;&gt;Material Design framework&lt;/h3&gt;
+
+&lt;p&gt;Lots of work has gone into polishing the Material Design framework. Some of the features that have been implemented include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;An improved dialog component&lt;/li&gt;
+  &lt;li&gt;A FAB/action button&lt;/li&gt;
+  &lt;li&gt;Dropdown and navbar overflow menu&lt;/li&gt;
+  &lt;li&gt;Slider component&lt;/li&gt;
+  &lt;li&gt;Improved textfield&lt;/li&gt;
+  &lt;li&gt;Switch to QtQuick Controls for the PageStack&lt;/li&gt;
+  &lt;li&gt;Improved ink animations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;desktop-shell&quot;&gt;Desktop shell&lt;/h3&gt;
+
+&lt;p&gt;Lots of work has gone into Papyros shell, and it’s getting closer and closer to at least being semi-usable as a full desktop session. We also reached a significant milestone by being able to run it as a Wayland session from GDM using Qt 5.5’s eglfs bindings.&lt;/p&gt;
+
+&lt;p&gt;Some of the features that have been implemented in the past two months include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A music control widget in the widgets/notification drawer&lt;/li&gt;
+  &lt;li&gt;The sound indicator&lt;/li&gt;
+  &lt;li&gt;The power indicator&lt;/li&gt;
+  &lt;li&gt;A classic layout, similar to Chrome OS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Current in-development features include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The network indicator&lt;/li&gt;
+  &lt;li&gt;App launcher&lt;/li&gt;
+  &lt;li&gt;App icons in the panel&lt;/li&gt;
+  &lt;li&gt;The modern layout, similar to GNOME/Ubuntu/OS X&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Here’s a nice screenshot of our work so far, highlighting the classic layout and our fancy calendar indicator:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/monthly_update_1_15/screenshot_1.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ostree-and-app-bundles&quot;&gt;OSTree and App Bundles&lt;/h3&gt;
+
+&lt;p&gt;We’ve successfully set up building OSTree images from Arch packages, and have tested a GNOME OSTree image in VirtualBox. We’ve built a Papyros image too, but it’s having Wayland issues.&lt;/p&gt;
+
+&lt;p&gt;This is huge step forward, as we now have the foundation for a fully atomic, stable, and read-only base OS using OSTree and Arch Linux. Awesome stuff! If you want try it out, check out the &lt;a href=&quot;https://github.com/papyros/powerpack&quot;&gt;Powerpack&lt;/a&gt; repository, and follow the instructions in the README. The plan is to eventually start building the OSTree repository and VirtualBox images (plus eventually installable ISOs) on our build server, but for you now must compile it from scratch.&lt;/p&gt;
+
+&lt;p&gt;In addition OSTree providing the base operating system, we are also looking to using a new GNOME project called &lt;a href=&quot;https://github.com/alexlarsson/xdg-app&quot;&gt;xdg-app&lt;/a&gt;, which implements &lt;a href=&quot;https://wiki.gnome.org/Projects/SandboxedApps&quot;&gt;App Bundles and sandboxing&lt;/a&gt;. This will support the concept of runtimes, such as GNOME 3.16, Papyros 0.1, KDE 5.2, etc., which allow multiple versions installed side-by-side without breaking apps. This will allow applications to be upgraded independent of each other and the base OS.&lt;/p&gt;
+
+&lt;h3 id=&quot;core-apps&quot;&gt;Core Apps&lt;/h3&gt;
+
+&lt;p&gt;Some work has started on the &lt;a href=&quot;https://github.com/papyros/settings-app&quot;&gt;Settings app&lt;/a&gt;, but most of it is in the planning phase still.&lt;/p&gt;
+
+&lt;p&gt;The great news is an app developer has started on what will probably be the default Calculator app! Check out his code on &lt;a href=&quot;https://github.com/PierreJacquier/papyros-calculator&quot;&gt;GitHub&lt;/a&gt; or view his post on &lt;a href=&quot;https://plus.google.com/117435800250066519130/posts/da2JuC1gkbN&quot;&gt;Google+&lt;/a&gt;. Here’s a screenshot of the Calendar app:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/monthly_update_1_15/papyros-calculator.png&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-website&quot;&gt;The Website&lt;/h3&gt;
+
+&lt;p&gt;In case you’re new to the project, or didn’t happen to notice, we have a new website! It’s built with the all-new Octopress 3, which is a static website generator built on top of Jekyll. We’re also slowly beginning to implement a Material Design theme using Polymer.&lt;/p&gt;
+
+&lt;p&gt;If you’re a web developer and interested in contributing, feel free to check out the &lt;a href=&quot;https://github.com/papyros/papyros.github.io/issues&quot;&gt;GitHub Issues&lt;/a&gt; or &lt;a href=&quot;https://github.com/papyros/papyros.github.io/pulls&quot;&gt;submit a pull request&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;getting-involved&quot;&gt;Getting Involved&lt;/h3&gt;
+
+&lt;p&gt;Interested in contributing to the project? We have a page for that! Check out our &lt;a href=&quot;/get_involved&quot;&gt;Get Involved&lt;/a&gt; page. Here you can find ways to contribute, regardless of whether you are a developer, designer, translator, tester, or just plain user.&lt;/p&gt;
+
+&lt;p&gt;We also have a Donate button that page, which allows you to donate via Paypal. All donations will go to web hosting and server costs and (once we set them up) bug bounties.&lt;/p&gt;
+
+&lt;p&gt;Thanks for everyone’s support and interest in our project! Here’s to another exciting month of development!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;– Michael Spencer, Papyros founder and lead developer&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Feb 2015 21:33:45 +0000</pubDate>
+        <link>http://papyros.io/2015/02/05/monthly-status-update-1-15.html</link>
+        <guid isPermaLink="true">http://papyros.io/2015/02/05/monthly-status-update-1-15.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Weekly Status Update</title>

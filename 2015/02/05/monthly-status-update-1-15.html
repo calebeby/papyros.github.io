@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Monthly Status Update 1/15</title>
+  <meta name="description" content="I had originally planned to do weekly status updates, but I’ve been busy focusing on actual development and normal life, so I’ve only had time to do one upda...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://papyros.io/2015/02/05/monthly-status-update-1-15.html">
+  <link rel="alternate" type="application/rss+xml" title="Papyros" href="http://papyros.io/feed.xml" />
+
+  
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-47662876-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+
+  <link rel="import" href="/bower_components/polymer/polymer.html">
+  <link rel="import" href="/bower_components/paper-button/paper-button.html">
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/" style="font-family: Roboto; font-weight: 300;">
+        Papyr<span style="font-family: Roboto; font-weight: 500;">os</span>
+    </a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+          <a class="page-link" href="/blog/">
+              
+                Blog
+              
+          </a>
+          
+        
+          
+          <a class="page-link" href="/get_involved/index.html">
+              
+                Get Involved
+              
+          </a>
+          
+        
+          
+          <a class="page-link" href="/faq/index.html">
+              
+                FAQ
+              
+          </a>
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Monthly Status Update 1/15</h1>
+    <p class="post-meta">Feb 5, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>I had originally planned to do weekly status updates, but I’ve been busy focusing on actual development and normal life, so I’ve only had time to do one update so far. So, we’ll turn the updates into monthly updates instead. I’ll start off by calling this the January update so as to get another one in at the end of February.</p>
+
+<p>The biggest news since our first update is that we’ve settled on a new name - Papyros! (The old name, Quantum OS, was trademarked by an existing company). Our website is now <a href="http://papyros.io">papyros.io</a>, and you can follow us on <a href="https://plus.google.com/113262712329378697012">Google+</a> or join our <a href="https://plus.google.com/u/0/communities/109966288908859324845">Google+ community</a>.</p>
+
+<h3 id="new-team-members">New Team Members</h3>
+
+<p>I’d like to welcome several new designers and developers to our team who have shown continued great contributions in code and designs.</p>
+
+<p>Our design team consists of:</p>
+
+<ul>
+  <li>Myself, Michael Spencer (well, I’m a developer, not a professional designer, but I care a lot about design)</li>
+  <li>Josh Gray</li>
+  <li>Christopher Spencer</li>
+  <li>Andrea Del Sarto</li>
+  <li>Christoph Laier</li>
+</ul>
+
+<p>And our development team consists of:</p>
+
+<ul>
+  <li>Michael Spencer (that’s me again)</li>
+  <li>Bogdan Cuza</li>
+  <li>Ricardo Vieira</li>
+</ul>
+
+<p>Thanks to this awesome team and to everyone else who has show interest, given support, or contributed to the project.</p>
+
+<h3 id="overall-os-progress">Overall OS progress</h3>
+
+<p>Work on the overall OS is progressing nicely. Our design team has done some great mockups for the installer and some of the core apps, including the web browser and calculator. We also have our first packages available in the AUR, which you can install as <a href="https://aur.archlinux.org/packages/papyros-shell/">papyros-shell</a>.</p>
+
+<p>Work is also starting on a build server to host packages so users don’t have to compile everything from scratch, which takes a very long time, especially in VirtualBox. Unfortunately, there are some issues with the build tooling on the server, but hopefully that can be worked on soon.</p>
+
+<h3 id="material-design-framework">Material Design framework</h3>
+
+<p>Lots of work has gone into polishing the Material Design framework. Some of the features that have been implemented include:</p>
+
+<ul>
+  <li>An improved dialog component</li>
+  <li>A FAB/action button</li>
+  <li>Dropdown and navbar overflow menu</li>
+  <li>Slider component</li>
+  <li>Improved textfield</li>
+  <li>Switch to QtQuick Controls for the PageStack</li>
+  <li>Improved ink animations</li>
+</ul>
+
+<h3 id="desktop-shell">Desktop shell</h3>
+
+<p>Lots of work has gone into Papyros shell, and it’s getting closer and closer to at least being semi-usable as a full desktop session. We also reached a significant milestone by being able to run it as a Wayland session from GDM using Qt 5.5’s eglfs bindings.</p>
+
+<p>Some of the features that have been implemented in the past two months include:</p>
+
+<ul>
+  <li>A music control widget in the widgets/notification drawer</li>
+  <li>The sound indicator</li>
+  <li>The power indicator</li>
+  <li>A classic layout, similar to Chrome OS</li>
+</ul>
+
+<p>Current in-development features include:</p>
+
+<ul>
+  <li>The network indicator</li>
+  <li>App launcher</li>
+  <li>App icons in the panel</li>
+  <li>The modern layout, similar to GNOME/Ubuntu/OS X</li>
+</ul>
+
+<p>Here’s a nice screenshot of our work so far, highlighting the classic layout and our fancy calendar indicator:</p>
+
+<p><img src="/images/monthly_update_1_15/screenshot_1.png" /></p>
+
+<h3 id="ostree-and-app-bundles">OSTree and App Bundles</h3>
+
+<p>We’ve successfully set up building OSTree images from Arch packages, and have tested a GNOME OSTree image in VirtualBox. We’ve built a Papyros image too, but it’s having Wayland issues.</p>
+
+<p>This is huge step forward, as we now have the foundation for a fully atomic, stable, and read-only base OS using OSTree and Arch Linux. Awesome stuff! If you want try it out, check out the <a href="https://github.com/papyros/powerpack">Powerpack</a> repository, and follow the instructions in the README. The plan is to eventually start building the OSTree repository and VirtualBox images (plus eventually installable ISOs) on our build server, but for you now must compile it from scratch.</p>
+
+<p>In addition OSTree providing the base operating system, we are also looking to using a new GNOME project called <a href="https://github.com/alexlarsson/xdg-app">xdg-app</a>, which implements <a href="https://wiki.gnome.org/Projects/SandboxedApps">App Bundles and sandboxing</a>. This will support the concept of runtimes, such as GNOME 3.16, Papyros 0.1, KDE 5.2, etc., which allow multiple versions installed side-by-side without breaking apps. This will allow applications to be upgraded independent of each other and the base OS.</p>
+
+<h3 id="core-apps">Core Apps</h3>
+
+<p>Some work has started on the <a href="https://github.com/papyros/settings-app">Settings app</a>, but most of it is in the planning phase still.</p>
+
+<p>The great news is an app developer has started on what will probably be the default Calculator app! Check out his code on <a href="https://github.com/PierreJacquier/papyros-calculator">GitHub</a> or view his post on <a href="https://plus.google.com/117435800250066519130/posts/da2JuC1gkbN">Google+</a>. Here’s a screenshot of the Calendar app:</p>
+
+<p><img src="/images/monthly_update_1_15/papyros-calculator.png" /></p>
+
+<h3 id="the-website">The Website</h3>
+
+<p>In case you’re new to the project, or didn’t happen to notice, we have a new website! It’s built with the all-new Octopress 3, which is a static website generator built on top of Jekyll. We’re also slowly beginning to implement a Material Design theme using Polymer.</p>
+
+<p>If you’re a web developer and interested in contributing, feel free to check out the <a href="https://github.com/papyros/papyros.github.io/issues">GitHub Issues</a> or <a href="https://github.com/papyros/papyros.github.io/pulls">submit a pull request</a>.</p>
+
+<h3 id="getting-involved">Getting Involved</h3>
+
+<p>Interested in contributing to the project? We have a page for that! Check out our <a href="/get_involved">Get Involved</a> page. Here you can find ways to contribute, regardless of whether you are a developer, designer, translator, tester, or just plain user.</p>
+
+<p>We also have a Donate button that page, which allows you to donate via Paypal. All donations will go to web hosting and server costs and (once we set them up) bug bounties.</p>
+
+<p>Thanks for everyone’s support and interest in our project! Here’s to another exciting month of development!</p>
+
+<p><br /></p>
+
+<p>– Michael Spencer, Papyros founder and lead developer</p>
+
+  </article>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Papyros</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Papyros</li>
+          <li><a href="mailto:mspencer@sonrisesoftware.com">mspencer@sonrisesoftware.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/papyros">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">papyros</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">Papyros is a modern operating system which adheres to Google's Material Design guidelines and is based on Arch Linux.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+  
+
+<script type="text/javascript">
+var disqus_shortname = 'quartzos';
+
+
+var disqus_script = 'count.js';
+
+(function () {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+
+
+
+</footer>
+
+
+  </body>
+
+</html>
