@@ -74,6 +74,18 @@ a {
     text-decoration: underline; }
 
 /**
+* Links in a Paper button
+*/
+paper-button > a {
+  color: white;
+  text-decoration: none; }
+  paper-button > a:visited {
+    color: white; }
+  paper-button > a:hover {
+    color: white;
+    text-decoration: none; }
+
+/**
  * Blockquotes
  */
 blockquote {
@@ -454,3 +466,7 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+paper-button[raised].donate {
+  background: #4285f4;
+  color: #fff; }
