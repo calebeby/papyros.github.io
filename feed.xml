@@ -6,8 +6,8 @@
 </description>
     <link>http://papyros.io/</link>
     <atom:link href="http://papyros.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Feb 2015 22:20:31 +0000</pubDate>
-    <lastBuildDate>Thu, 05 Feb 2015 22:20:31 +0000</lastBuildDate>
+    <pubDate>Fri, 06 Feb 2015 05:13:33 +0000</pubDate>
+    <lastBuildDate>Fri, 06 Feb 2015 05:13:33 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -102,7 +102,7 @@
 
 &lt;p&gt;Some work has started on the &lt;a href=&quot;https://github.com/papyros/settings-app&quot;&gt;Settings app&lt;/a&gt;, but most of it is in the planning phase still.&lt;/p&gt;
 
-&lt;p&gt;The great news is an app developer has started on what will probably be the default Calculator app! Check out his code on &lt;a href=&quot;https://github.com/PierreJacquier/papyros-calculator&quot;&gt;GitHub&lt;/a&gt; or view his post on &lt;a href=&quot;https://plus.google.com/117435800250066519130/posts/da2JuC1gkbN&quot;&gt;Google+&lt;/a&gt;. Here’s a screenshot of the Calendar app:&lt;/p&gt;
+&lt;p&gt;The great news is an app developer has started on what will probably be the default Calculator app! Check out his code on &lt;a href=&quot;https://github.com/PierreJacquier/papyros-calculator&quot;&gt;GitHub&lt;/a&gt; or view his post on &lt;a href=&quot;https://plus.google.com/117435800250066519130/posts/da2JuC1gkbN&quot;&gt;Google+&lt;/a&gt;. Here’s a screenshot of the Calculator app:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/monthly_update_1_15/papyros-calculator.png&quot; /&gt;&lt;/p&gt;
 
