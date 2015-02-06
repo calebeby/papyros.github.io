@@ -170,13 +170,19 @@ pre {
   min-height: 56px;
   position: relative; }
 
+.site-header.light {
+  border-top: none;
+  border-bottom: none;
+  min-height: 56px;
+  position: relative; }
+
 .site-title {
   font-size: 26px;
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left; }
-  .site-title, .site-title:visited {
+  .site-title > a, .site-title > a:visited {
     color: rgba(0, 0, 0, 0.87); }
 
 .site-nav {
@@ -291,6 +297,8 @@ pre {
 .post-meta {
   font-size: 14px;
   color: #828282; }
+  .post-meta > a {
+    color: #828282; }
 
 .post-link {
   display: block;
@@ -470,3 +478,8 @@ pre {
 paper-button[raised].donate {
   background: #4285f4;
   color: #fff; }
+
+a.page-link.light {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #009688; }
