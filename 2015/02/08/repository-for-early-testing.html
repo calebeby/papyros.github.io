@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Get Involved</title>
-  <meta name="description" content="Papyros is a modern operating system which adheres to Google's Material Design guidelines and is based on Arch Linux.
-">
+  <title>Repository for Early Testing</title>
+  <meta name="description" content="We now have an initial package repository for users to try out the Papyros shell on ArchLinux!">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://papyros.io/get_involved/">
+  <link rel="canonical" href="http://papyros.io/2015/02/08/repository-for-early-testing.html">
   <link rel="alternate" type="application/rss+xml" title="Papyros" href="http://papyros.io/feed.xml" />
 
   
@@ -98,57 +97,49 @@ _gaq.push(['_trackPageview']);
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Get Involved</h1>
+    <h1 class="post-title">Repository for Early Testing</h1>
+    <p class="post-meta">Feb 8, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>Whether you are a developer, designer, translator, or just a regular user, there are many ways to
-contribute to Papyros.</p>
+    <p>We now have an initial package repository for users to try out the Papyros shell on ArchLinux!</p>
 
-<p>You can also donate to Papyros to fund development or web hosting. All donations will go directly
-to web hosting and server costs and bug bounties (once we set them up). Once we have bug bounties set
-up, any donations left over after hosting and server costs will be split among the highest priority
-bug reports on GitHub and anyone with the necessary skills can fix the bug and claim the bug bounty.</p>
+<p><em><strong>DISCLAIMER</strong>: Currently, there are packages for x86_64 architecture only, as the qt5 packages are big and will take time to compile again for i686. Keep in mind this is very much in a pre-alpha state, and many things are not implemented yet. The packages themselves should work though, as I’ve tested them locally. No guarantees though!</em></p>
 
-<paper-button raised="" class="donate">
-    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=SZ4BPY35QFP76">
-        Donate via Paypal
-    </a>
-</paper-button>
+<p>First, add the following lines to your <code>/etc/pacman.conf</code> file, above the default repositories:</p>
+
+<pre><code>[papyros]
+SigLevel = Never
+Server = http://dash.papyros.io/repos/$repo/$arch
+</code></pre>
+
+<p>Then, run</p>
+
+<pre><code>pacman -Syu
+pacman -S papyros-shell
+</code></pre>
+
+<p>You can then test the shell by running it in a new window on top of your desktop:</p>
+
+<pre><code>papyros-shell
+</code></pre>
+
+<p>It’s still very much in early development, though; the network indicator doesn’t work, and you can’t even start apps in the shell yet. Those features will land over coming weeks.</p>
+
+<p>Happy testing!</p>
 
 <p><br /></p>
 
-<h3 id="development">Development</h3>
-
-<ul>
-  <li>If you’re familiar with QML, you can contribute to our
-<a href="https://github.com/papyros/qml-material">Material Design app framework</a> or the
-<a href="https://github.com/papyros/papyros-shell">desktop shell</a> itself.</li>
-  <li>If you prefer C++, you can help by implementing backends for the desktop shell indicators and
-other features in the <a href="https://github.com/papyros/qml-desktop">desktop library</a></li>
-  <li>If you want to help build the base operating system, including work on using OSTree and xdg-app,
-check out the <a href="https://github.com/papyros/powerpack">powerpack</a> repository.</li>
-</ul>
-
-<h3 id="translations">Translations</h3>
-
-<p>The project is still in active development, and doesn’t fully support translating yet. We’ll add
-support for translations, and would love to have your help!</p>
-
-<h3 id="design">Design</h3>
-
-<p>We care a lot about the design of Papyros. You can check out our <a href="https://github.com/papyros/mockups">mockups</a>,
-or join the discusson in the Papyros community on Google+ by submitting mockups or commenting on
-others’ mockups.</p>
-
-<h3 id="bug-reports">Bug Reports</h3>
-
-<p>Once we have an alpha release, bug reports are a great way to contribute to Papyros, whether you’re
-a developer, designer, or tester. We plan to have a bug reporting app in the OS, but you can also
-file bugs in the appropriate project on <a href="https://github.com/papyros">GitHub</a>.</p>
+<p>– Michael Spencer, Papyros founder and lead developer</p>
 
   </article>
 
+  
+  <section>
+      <h1>Comments</h1>
+      <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
   
 
 </div>
@@ -204,7 +195,10 @@ file bugs in the appropriate project on <a href="https://github.com/papyros">Git
 var disqus_shortname = 'quartzos';
 
 
-var disqus_script = 'count.js';
+// var disqus_developer = 1;
+var disqus_identifier = 'http://papyros.io/2015/02/08/repository-for-early-testing.html';
+var disqus_url = 'http://papyros.io/2015/02/08/repository-for-early-testing.html';
+var disqus_script = 'embed.js';
 
 (function () {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
