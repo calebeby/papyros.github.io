@@ -6,8 +6,8 @@
 </description>
     <link>http://papyros.io/</link>
     <atom:link href="http://papyros.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Feb 2015 01:02:19 +0000</pubDate>
-    <lastBuildDate>Mon, 23 Feb 2015 01:02:19 +0000</lastBuildDate>
+    <pubDate>Wed, 15 Apr 2015 05:13:49 +0000</pubDate>
+    <lastBuildDate>Wed, 15 Apr 2015 05:13:49 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -55,7 +55,7 @@ pacman -S papyros-shell
 
 &lt;p&gt;The biggest news since our first update is that we’ve settled on a new name - Papyros! (The old name, Quantum OS, was trademarked by an existing company). Our website is now &lt;a href=&quot;http://papyros.io&quot;&gt;papyros.io&lt;/a&gt;, and you can follow us on &lt;a href=&quot;https://plus.google.com/113262712329378697012&quot;&gt;Google+&lt;/a&gt; or join our &lt;a href=&quot;https://plus.google.com/u/0/communities/109966288908859324845&quot;&gt;Google+ community&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;new-team-members&quot;&gt;New Team Members&lt;/h3&gt;
+&lt;h4 id=&quot;new-team-members&quot;&gt;New Team Members&lt;/h4&gt;
 
 &lt;p&gt;I’d like to welcome several new designers and developers to our team who have shown continued great contributions in code and designs.&lt;/p&gt;
 
@@ -79,13 +79,13 @@ pacman -S papyros-shell
 
 &lt;p&gt;Thanks to this awesome team and to everyone else who has show interest, given support, or contributed to the project.&lt;/p&gt;
 
-&lt;h3 id=&quot;overall-os-progress&quot;&gt;Overall OS progress&lt;/h3&gt;
+&lt;h4 id=&quot;overall-os-progress&quot;&gt;Overall OS progress&lt;/h4&gt;
 
 &lt;p&gt;Work on the overall OS is progressing nicely. Our design team has done some great mockups for the installer and some of the core apps, including the web browser and calculator. We also have our first packages available in the AUR, which you can install as &lt;a href=&quot;https://aur.archlinux.org/packages/papyros-shell/&quot;&gt;papyros-shell&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Work is also starting on a build server to host packages so users don’t have to compile everything from scratch, which takes a very long time, especially in VirtualBox. Unfortunately, there are some issues with the build tooling on the server, but hopefully that can be worked on soon.&lt;/p&gt;
 
-&lt;h3 id=&quot;material-design-framework&quot;&gt;Material Design framework&lt;/h3&gt;
+&lt;h4 id=&quot;material-design-framework&quot;&gt;Material Design framework&lt;/h4&gt;
 
 &lt;p&gt;Lots of work has gone into polishing the Material Design framework. Some of the features that have been implemented include:&lt;/p&gt;
 
@@ -101,7 +101,7 @@ pacman -S papyros-shell
 
 &lt;p&gt;Thanks to the  &lt;a href=&quot;https://github.com/papyros/qml-material/graphs/contributors&quot;&gt;17 developers&lt;/a&gt; who have contributed to the framework.&lt;/p&gt;
 
-&lt;h3 id=&quot;desktop-shell&quot;&gt;Desktop shell&lt;/h3&gt;
+&lt;h4 id=&quot;desktop-shell&quot;&gt;Desktop shell&lt;/h4&gt;
 
 &lt;p&gt;Lots of work has gone into Papyros shell, and it’s getting closer and closer to at least being semi-usable as a full desktop session. We also reached a significant milestone by being able to run it as a Wayland session from GDM using Qt 5.5’s eglfs bindings.&lt;/p&gt;
 
@@ -125,11 +125,11 @@ pacman -S papyros-shell
 
 &lt;p&gt;Here’s a nice screenshot of our work so far, highlighting the classic layout and our fancy calendar indicator:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/monthly_update_1_15/screenshot_1.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;responsive-img&quot; src=&quot;/images/monthly_update_1_15/screenshot_1.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Thanks to the  &lt;a href=&quot;https://github.com/papyros/papyros-shell/graphs/contributors&quot;&gt;7 developers&lt;/a&gt; who have contributed to the desktop shell, and to the  &lt;a href=&quot;https://github.com/papyros/qml-desktop/graphs/contributors&quot;&gt;3 developers&lt;/a&gt; who have contributed to the desktop backend code.&lt;/p&gt;
 
-&lt;h3 id=&quot;ostree-and-app-bundles&quot;&gt;OSTree and App Bundles&lt;/h3&gt;
+&lt;h4 id=&quot;ostree-and-app-bundles&quot;&gt;OSTree and App Bundles&lt;/h4&gt;
 
 &lt;p&gt;We’ve successfully set up building OSTree images from Arch packages, and have tested a GNOME OSTree image in VirtualBox. We’ve built a Papyros image too, but it’s having Wayland issues.&lt;/p&gt;
 
@@ -137,15 +137,15 @@ pacman -S papyros-shell
 
 &lt;p&gt;In addition OSTree providing the base operating system, we are also looking to using a new GNOME project called &lt;a href=&quot;https://github.com/alexlarsson/xdg-app&quot;&gt;xdg-app&lt;/a&gt;, which implements &lt;a href=&quot;https://wiki.gnome.org/Projects/SandboxedApps&quot;&gt;App Bundles and sandboxing&lt;/a&gt;. This will support the concept of runtimes, such as GNOME 3.16, Papyros 0.1, KDE 5.2, etc., which allow multiple versions installed side-by-side without breaking apps. This will allow applications to be upgraded independent of each other and the base OS.&lt;/p&gt;
 
-&lt;h3 id=&quot;core-apps&quot;&gt;Core Apps&lt;/h3&gt;
+&lt;h4 id=&quot;core-apps&quot;&gt;Core Apps&lt;/h4&gt;
 
 &lt;p&gt;Some work has started on the &lt;a href=&quot;https://github.com/papyros/settings-app&quot;&gt;Settings app&lt;/a&gt;, but most of it is in the planning phase still.&lt;/p&gt;
 
 &lt;p&gt;The great news is an app developer has started on what will probably be the default Calculator app! Check out his code on &lt;a href=&quot;https://github.com/PierreJacquier/papyros-calculator&quot;&gt;GitHub&lt;/a&gt; or view his post on &lt;a href=&quot;https://plus.google.com/117435800250066519130/posts/da2JuC1gkbN&quot;&gt;Google+&lt;/a&gt;. Here’s a screenshot of the Calculator app:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/monthly_update_1_15/papyros-calculator.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;responsive-img&quot; src=&quot;/images/monthly_update_1_15/papyros-calculator.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;the-website&quot;&gt;The Website&lt;/h3&gt;
+&lt;h4 id=&quot;the-website&quot;&gt;The Website&lt;/h4&gt;
 
 &lt;p&gt;In case you’re new to the project, or didn’t happen to notice, we have a new website! It’s built with the all-new Octopress 3, which is a static website generator built on top of Jekyll. We’re also slowly beginning to implement a Material Design theme using Polymer.&lt;/p&gt;
 
@@ -153,7 +153,7 @@ pacman -S papyros-shell
 
 &lt;p&gt;Thanks to the  &lt;a href=&quot;https://github.com/papyros/papyros.github.io/graphs/contributors&quot;&gt;4 developers&lt;/a&gt; who have contributed to the  new website.&lt;/p&gt;
 
-&lt;h3 id=&quot;getting-involved&quot;&gt;Getting Involved&lt;/h3&gt;
+&lt;h4 id=&quot;getting-involved&quot;&gt;Getting Involved&lt;/h4&gt;
 
 &lt;p&gt;Interested in contributing to the project? We have a page for that! Check out our &lt;a href=&quot;/get_involved&quot;&gt;Get Involved&lt;/a&gt; page. Here you can find ways to contribute, regardless of whether you are a developer, designer, translator, tester, or just plain user.&lt;/p&gt;
 
@@ -180,7 +180,7 @@ pacman -S papyros-shell
 
 &lt;p&gt;We’ll be starting weekly status updates to share progress on the various components of Quantum OS.&lt;/p&gt;
 
-&lt;h3 id=&quot;qml-material&quot;&gt;QML Material&lt;/h3&gt;
+&lt;h4 id=&quot;qml-material&quot;&gt;QML Material&lt;/h4&gt;
 
 &lt;p&gt;21 commits where made to our Material Design framework during the past week. The following features
 were implemented:&lt;/p&gt;
@@ -209,7 +209,7 @@ were implemented:&lt;/p&gt;
 I’d like to especially mention &lt;a href=&quot;https://github.com/geiseri&quot;&gt;&lt;a href=&quot;https://github.com/geiseri&quot; class=&quot;user-mention&quot;&gt;@geiseri&lt;/a&gt;&lt;/a&gt;  who has been helping us migrate to QtQuick.Controls along
 with contributing other great feedback and discussion about how we’re implementing various features.&lt;/p&gt;
 
-&lt;h3 id=&quot;quantum-shell&quot;&gt;Quantum Shell&lt;/h3&gt;
+&lt;h4 id=&quot;quantum-shell&quot;&gt;Quantum Shell&lt;/h4&gt;
 
 &lt;p&gt;No commits landed in the main branch for Quantum Shell, as discussion was ongoing and any work was made
 to separate repositories or branches. The following items were discussed or worked on:&lt;/p&gt;
@@ -221,11 +221,11 @@ to separate repositories or branches. The following items were discussed or work
 
 &lt;p&gt;Planning also continues on different designs and layouts and deciding what features to implement.&lt;/p&gt;
 
-&lt;h3 id=&quot;sddm-theme&quot;&gt;SDDM Theme&lt;/h3&gt;
+&lt;h4 id=&quot;sddm-theme&quot;&gt;SDDM Theme&lt;/h4&gt;
 
 &lt;p&gt;Not much happening here, as the focus during the past week has been on other components. However, &lt;a href=&quot;https://github.com/boghison&quot;&gt;&lt;a href=&quot;https://github.com/boghison&quot; class=&quot;user-mention&quot;&gt;@boghison&lt;/a&gt;&lt;/a&gt; did turn the initial prototype into a working SDDM theme, which is awesome.&lt;/p&gt;
 
-&lt;h3 id=&quot;general-os-progress&quot;&gt;General OS progress&lt;/h3&gt;
+&lt;h4 id=&quot;general-os-progress&quot;&gt;General OS progress&lt;/h4&gt;
 
 &lt;p&gt;A large part of my time this week was spent on the following items:&lt;/p&gt;
 
@@ -265,15 +265,15 @@ to separate repositories or branches. The following items were discussed or work
 
 &lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; Quantum OS has been renamed to Papyros to avoid trademark issues.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-desktop-shell&quot;&gt;The Desktop Shell&lt;/h3&gt;
+&lt;h4 id=&quot;the-desktop-shell&quot;&gt;The Desktop Shell&lt;/h4&gt;
 
 &lt;p&gt;We plan to develop the desktop shell and applications primarily using Qt 5 and QML, which will allow us to build highly polished and dynamic user interfaces and will work well for implementing Material Design. If possible, we will build the desktop shell in as much QML as possible built on top of the QtCompositor API, which provides a Qt framework for building a Wayland compositor.&lt;/p&gt;
 
 &lt;p&gt;We already have some working code with an experimental desktop layout:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/desktop_layout_1.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;responsive-img&quot; src=&quot;/images/desktop_layout_1.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;applications&quot;&gt;Applications&lt;/h3&gt;
+&lt;h4 id=&quot;applications&quot;&gt;Applications&lt;/h4&gt;
 
 &lt;p&gt;Our application framework will be based upon a QML UI toolkit implementing Material Design. It is written completely from scratch, and does not use QtQuick Controls, and is not a fork or theme for the Ubuntu UI toolkit. The reason for this is that we want to be able to focus specifically on implementing Material Design, which has several unique features, such as the concept of elevation. We will most likely have a Qt/Gtk theme for existing apps, but the official recommendation will be writing new applications or porting existing applications to the Material Design framework. The API will be similar to that of other QML frameworks such as the Ubuntu UI toolkit, so it will not be too difficult porting existing apps.&lt;/p&gt;
 
@@ -283,15 +283,15 @@ to separate repositories or branches. The following items were discussed or work
 
 &lt;p&gt;The Material Design QML framework is well underway, as can be seen from this sample application:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/blueprint_1.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;responsive-img&quot; src=&quot;/images/blueprint_1.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;the-base-operating-system&quot;&gt;The Base Operating System&lt;/h3&gt;
+&lt;h4 id=&quot;the-base-operating-system&quot;&gt;The Base Operating System&lt;/h4&gt;
 
 &lt;p&gt;We plan to initially leverage an existing operating system, most likely Arch or Ubuntu. Arch is a strong possibility because of the simple packaging manager, lightweight base system, and the rolling release concept. Our goal is to base our work on the latest upstream versions available, with no patches or modifications, so our work will run on any base Linux distro that supports Wayland.&lt;/p&gt;
 
 &lt;p&gt;We will also need to build a login manager and installer. Our plan is to write a theme for SDDM, which supports themes written in QML. We don’t have any plans for an installer yet, as that will need to wait until a base OS is chosen.&lt;/p&gt;
 
-&lt;h3 id=&quot;the-development-team-and-code&quot;&gt;The Development Team and Code&lt;/h3&gt;
+&lt;h4 id=&quot;the-development-team-and-code&quot;&gt;The Development Team and Code&lt;/h4&gt;
 
 &lt;p&gt;Currently the team consists of mainly just myself (&lt;a href=&quot;https://plus.google.com/u/0/+MichaelSpencer&quot;&gt;Michael Spencer&lt;/a&gt;/&lt;a href=&quot;https://github.com/iBeliever&quot;&gt;&lt;a href=&quot;https://github.com/iBeliever&quot; class=&quot;user-mention&quot;&gt;@iBeliever&lt;/a&gt;&lt;/a&gt;), though I am already getting some great design feedback and mockups from &lt;a href=&quot;https://plus.google.com/u/0/+AndreaDelSarto88&quot;&gt;Andrea Del Sarto&lt;/a&gt;. Anyone who is interested in contributing code, design, feedback, or testing is welcome to contribute, though I plan to remain in control of project management to ensure that we stay focused on our goals. I am certainly open to suggestions and feedback, though!&lt;/p&gt;
 
