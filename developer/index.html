@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Download | Papyros</title>
+  <title>App Development | Papyros</title>
   
   <meta name="description" content="Papyros is a modern operating system which adheres to Google's Material Design guidelines and is based on Arch Linux.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://papyros.io/download/">
+  <link rel="canonical" href="http://papyros.io/developer/">
   <link rel="alternate" type="application/rss+xml" title="Papyros" href="http://papyros.io/feed.xml" />
 
   
@@ -58,7 +58,7 @@ _gaq.push(['_trackPageview']);
           
         
           
-          <li ><a class="page-link" href="/developer/index.html">
+          <li class="active"><a class="page-link" href="/developer/index.html">
               
                 Develop
               
@@ -74,7 +74,7 @@ _gaq.push(['_trackPageview']);
           
         
           
-          <li class="active"><a class="page-link" href="/download/index.html">
+          <li ><a class="page-link" href="/download/index.html">
               
                 Download
               
@@ -106,7 +106,7 @@ _gaq.push(['_trackPageview']);
           
         
           
-          <li><a class="page-link" 
+          <li><a class="page-link active" 
                  href="/developer/index.html">
               
                 Develop
@@ -124,7 +124,7 @@ _gaq.push(['_trackPageview']);
           
         
           
-          <li><a class="page-link active" 
+          <li><a class="page-link" 
                  href="/download/index.html">
               
                 Download
@@ -160,38 +160,61 @@ _gaq.push(['_trackPageview']);
       <div>
 
   <br>
-  <h3 class="header">Download</h3>
+  <h3 class="header">App Development</h3>
   <div class="divider"></div>
   <br>
 
   <div class="content">
-    <p>The operating system, desktop shell, and material design framework is still in active development and is in a pre-alpha state. We don’t have any installer ISOs or stable repositories. However, we now have an initial package repository for users to try out the Papyros shell on ArchLinux!</p>
+    <img class="responsive-img" src="/images/develop_cross_platform.jpg">
 
-<p><i><b>DISCLAIMER</b>: Currently, there are packages for x86_64 architecture only, as the qt5 packages are big and will take time to compile again for i686. Keep in mind this is very much in a pre-alpha state, and many things are not implemented yet. The packages themselves should work though, as I’ve tested them locally. No guarantees though!</i></p>
+<div class="row center">
+    <h5 class="col s12 light">Build cross-platform apps with Material Design and QtQuick</h5>
+</div>
 
-<p>First, add the following lines to your <code>/etc/pacman.conf</code> file, above the default repositories:</p>
+<div class="row center">
+  <a class="waves-effect waves-light btn blue lighten-1" href="http://papyros.io/qml-material">
+      Developer Docs
+  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="waves-effect waves-light btn grey" href="https://github.com/papyros/qml-material">
+      GitHub
+  </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a class="waves-effect waves-light btn green lighten-1" href="https://www.bountysource.com/teams/papyros/issues?tracker_ids=7838182">
+      Bug Bounties
+  </a>
+</div>
 
-<pre><code>[papyros]
-SigLevel = Never
-Server = http://dash.papyros.io/repos/$repo/$arch
-</code></pre>
+<div class="section">
 
-<p>Then, run</p>
+  <!--   Icon Section   -->
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center light-blue-text"><i class="mdi-image-flash-on"></i></h2>
+        <h5 class="center">Convergence</h5>
 
-<pre><code>pacman -Syu
-pacman -S papyros-shell
-</code></pre>
+        <p class="light">With the Material framework for QtQuick, you can build powerful and well-designed cross-platform apps that run on Papyros and other Linux operating systems, OS X, Windows, and Android. You can create convergent apps that adapt to a wide variety of device sizes and input methods.</p>
+      </div>
+    </div>
 
-<p>You can then test the shell by running it in a new window on top of your desktop:</p>
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center light-blue-text"><i class="mdi-action-polymer"></i></h2>
+        <h5 class="center">Material Design</h5>
 
-<pre><code>papyros-shell
-</code></pre>
+        <p class="light">Our framework is built exactly according to the Material Design specifications. This means that apps built with the framework will fit in on Android and will look good on other platforms. You can also use the QtQuick.Controls theme to adapt existing apps without rewriting from stratch.</p>
+      </div>
+    </div>
 
-<p>It’s still very much in early development, though; the network indicator doesn’t work, and you can’t even start apps in the shell yet. Those features will land over coming weeks.</p>
+    <div class="col s12 m4">
+      <div class="icon-block">
+        <h2 class="center light-blue-text"><i class="mdi-action-settings"></i></h2>
+        <h5 class="center">Open Source</h5>
 
-<p>Happy testing!</p>
-
-
+        <p class="light">The Material framework is open source and is licensed under the LGPL version 2.1 or higher. This means you have full access to the source code on our GitHub page. You can choose to publish your app under a complient open-source license, or choose to keep it closed source.</p>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
   
   
