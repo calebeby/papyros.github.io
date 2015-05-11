@@ -55,6 +55,8 @@ _gaq.push(['_trackPageview']);
           
         
           
+        
+          
           <li ><a class="page-link" href="/developer/index.html">
               
                 Develop
@@ -63,19 +65,9 @@ _gaq.push(['_trackPageview']);
           
         
           
-        
-          
           <li ><a class="page-link" href="/blog/">
               
                 Blog
-              
-          </a></li>
-          
-        
-          
-          <li ><a class="page-link" href="/get_involved/index.html">
-              
-                Get Involved
               
           </a></li>
           
@@ -96,9 +88,19 @@ _gaq.push(['_trackPageview']);
           </a></li>
           
         
+          
+          <li ><a class="page-link" href="/get_involved/index.html">
+              
+                Get Involved
+              
+          </a></li>
+          
+        
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
+        
+          
         
           
         
@@ -112,21 +114,10 @@ _gaq.push(['_trackPageview']);
           
         
           
-        
-          
           <li><a class="page-link" 
                  href="/blog/">
               
                 Blog
-              
-          </a></li>
-          
-        
-          
-          <li><a class="page-link" 
-                 href="/get_involved/index.html">
-              
-                Get Involved
               
           </a></li>
           
@@ -145,6 +136,15 @@ _gaq.push(['_trackPageview']);
                  href="/support/index.html">
               
                 Support
+              
+          </a></li>
+          
+        
+          
+          <li><a class="page-link" 
+                 href="/get_involved/index.html">
+              
+                Get Involved
               
           </a></li>
           
@@ -266,6 +266,13 @@ var disqus_script = 'embed.js';
 
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="/bower_components/materialize/dist/js/materialize.min.js"></script>
+
+<!-- Activates mobile side nav -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".button-collapse").sideNav();
+	});
+</script>
 
   </body>
 
