@@ -56,6 +56,8 @@ _gaq.push(['_trackPageview']);
           
         
           
+        
+          
           <li ><a class="page-link" href="/developer/index.html">
               
                 Develop
@@ -64,19 +66,9 @@ _gaq.push(['_trackPageview']);
           
         
           
-        
-          
           <li ><a class="page-link" href="/blog/">
               
                 Blog
-              
-          </a></li>
-          
-        
-          
-          <li ><a class="page-link" href="/get_involved/index.html">
-              
-                Get Involved
               
           </a></li>
           
@@ -97,9 +89,19 @@ _gaq.push(['_trackPageview']);
           </a></li>
           
         
+          
+          <li ><a class="page-link" href="/get_involved/index.html">
+              
+                Get Involved
+              
+          </a></li>
+          
+        
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
+        
+          
         
           
         
@@ -113,21 +115,10 @@ _gaq.push(['_trackPageview']);
           
         
           
-        
-          
           <li><a class="page-link" 
                  href="/blog/">
               
                 Blog
-              
-          </a></li>
-          
-        
-          
-          <li><a class="page-link" 
-                 href="/get_involved/index.html">
-              
-                Get Involved
               
           </a></li>
           
@@ -150,6 +141,15 @@ _gaq.push(['_trackPageview']);
           </a></li>
           
         
+          
+          <li><a class="page-link" 
+                 href="/get_involved/index.html">
+              
+                Get Involved
+              
+          </a></li>
+          
+        
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </div>
@@ -165,9 +165,9 @@ _gaq.push(['_trackPageview']);
   <br>
 
   <div class="content">
-    <p>The operating system, desktop shell, and material design framework is still in active development and is in a pre-alpha state. We don’t have any installer ISOs or stable repositories. However, we now have an initial package repository for users to try out the Papyros shell on ArchLinux!</p>
+    <p>The operating system, desktop shell, and material design framework is still in active development and is in a pre-alpha state. We don’t have any installer ISOs or stable repositories. However, we now have an initial package repository for users to try out the Papyros shell on ArchLinux! These packages are automatically built each night by a Buildbot instance running on the Papyros servers.</p>
 
-<p><i><b>DISCLAIMER</b>: Currently, there are packages for x86_64 architecture only, as the qt5 packages are big and will take time to compile again for i686. Keep in mind this is very much in a pre-alpha state, and many things are not implemented yet. The packages themselves should work though, as I’ve tested them locally. No guarantees though!</i></p>
+<p><i><b>DISCLAIMER</b>: Keep in mind this is very much in a pre-alpha state, and many things are not implemented yet. The packages themselves should work though, as I’ve tested them locally. No guarantees though!</i></p>
 
 <p>First, add the following lines to your <code>/etc/pacman.conf</code> file, above the default repositories:</p>
 
@@ -182,12 +182,37 @@ Server = http://dash.papyros.io/repos/$repo/$arch
 pacman -S papyros-shell
 </code></pre>
 
-<p>You can then test the shell by running it in a new window on top of your desktop:</p>
+<p>To run the shell as a window on your desktop, you need to create a fake screen configuration similar to this one for a MacBook Pro:</p>
 
-<pre><code>papyros-shell
+<pre><code>{
+    "outputs": [
+        {
+            "mode": {
+                "refreshRate": 60000,
+                "size": {
+                    "height": 736,
+                    "width": 1285
+                }
+            },
+            "name": "Fake1",
+            "orientation": 2,
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    ]
+}
 </code></pre>
 
-<p>It’s still very much in early development, though; the network indicator doesn’t work, and you can’t even start apps in the shell yet. Those features will land over coming weeks.</p>
+<p>You will need to tweak the width and height to match your screen, taking into account the window decoration of the shell window and any system panels in your desktop environment. Save this file somewhere, for example, <code>~/.config/fake-screen.json</code></p>
+
+<p>You can then test the shell by running it in a new window on top of your desktop:</p>
+
+<pre><code>greenisland --fake-screen ~/.config/fake-screen.json --shell io.papyros.shell
+</code></pre>
+
+<p>It’s still very much in early development, though; the network indicator doesn’t work, you can’t lock the screen or logout, and there are other missing features. Those features will land over coming weeks.</p>
 
 <p>Happy testing!</p>
 
