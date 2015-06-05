@@ -38,7 +38,7 @@ _gaq.push(['_trackPageview']);
   <body>
 
     <!-- Navigation bar for the Papyros website using Materialize.
-     Left side displays the name Papyros, right side or nav drawer 
+     Left side displays the name Papyros, right side or nav drawer
      on mobile shows the top-level pages. -->
 
 
@@ -46,13 +46,15 @@ _gaq.push(['_trackPageview']);
 
 <nav class="transparent" role="navigation" style="box-shadow: none">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="/" class="brand-logo grey-text text-darken-3" 
+    <a id="logo-container" href="/" class="brand-logo grey-text text-darken-3"
        style="font-family: Roboto; font-weight: 300;">
       <img src="/images/papyros-icon.png" style="height: 40px; vertical-align: -8px">
       Papyr<span style="font-family: Roboto; font-weight: 500;">os</span>
     </a>
 
     <ul class="right hide-on-med-and-down">
+      
+        
       
         
       
@@ -117,16 +119,7 @@ _gaq.push(['_trackPageview']);
         
       
         
-        <li><a class="page-link" 
-               href="/developer/index.html">
-            
-              Develop
-            
-        </a></li>
-        
-      
-        
-        <li><a class="page-link" 
+        <li><a class="page-link"
                href="/blog/">
             
               Blog
@@ -135,16 +128,34 @@ _gaq.push(['_trackPageview']);
         
       
         
-        <li><a class="page-link" 
-               href="/download/index.html">
+        <li><a class="page-link"
+               href="/developer/index.html">
             
-              Download
+              Develop
             
         </a></li>
         
       
         
-        <li><a class="page-link" 
+        <li><a class="page-link"
+               href="/about/index.html">
+            
+              About
+            
+        </a></li>
+        
+      
+        
+        <li><a class="page-link"
+               href="/sponsors/index.html">
+            
+              Sponsors
+            
+        </a></li>
+        
+      
+        
+        <li><a class="page-link"
                href="/support/index.html">
             
               Support
@@ -153,19 +164,19 @@ _gaq.push(['_trackPageview']);
         
       
         
-        <li><a class="page-link" 
-               href="/get_involved/index.html">
+        <li><a class="page-link"
+               href="/download/index.html">
             
-              Get Involved
+              Download
             
         </a></li>
         
       
         
-        <li><a class="page-link" 
-               href="/about/index.html">
+        <li><a class="page-link"
+               href="/get_involved/index.html">
             
-              About
+              Get Involved
             
         </a></li>
         
@@ -174,6 +185,7 @@ _gaq.push(['_trackPageview']);
     <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>
 </nav>
+
 
     <div class="container">
       <script type="text/javascript">
@@ -189,11 +201,11 @@ _gaq.push(['_trackPageview']);
         data.sort(function (a, b) {
           return a.title - b.title;
         });
-        
+
         var openIssues = data[0].open_issues;
         var closedIssues = data[0].closed_issues;
         var workProgress = closedIssues * 100 / (openIssues + closedIssues);
-        
+
         var milestoneText = document.getElementById("milestone-text");
         milestoneText.style.display = "initial";
 
@@ -206,10 +218,10 @@ _gaq.push(['_trackPageview']);
 
         var progressBarInner = document.getElementById("milestone-progress");
         progressBarInner.style.width = workProgress + "%";
-        
+
         var progress = document.getElementById("milestone-percent");
         progress.innerHTML = Math.floor(workProgress) + "%";
-        
+
         var milestoneContainer = document.getElementById("milestone-container");
         milestoneContainer.style.display = "initial"
         milestoneContainer.style.opacity = "1";
@@ -255,7 +267,7 @@ _gaq.push(['_trackPageview']);
 
 <div class="row center">
   <div class="col s12 m10 offset-m1 l8 offset-l2 light">
-    You can support development of Papyros by donating on Bountysource. Bug bounties are a way of paying developers, both from the Papyros team and third-party contributors, for their work in fixing bugs or implementing features.
+    Papyros currently has no commercial funding, and development is done by team members and third-party contributors in their spare time. Help fund the development of Papyros so we can spend more time working on development and get more contributors involved.
   </div>
 </div>
 
@@ -297,7 +309,6 @@ _gaq.push(['_trackPageview']);
     </div>
   </div>
 </div>
-
 
     </div>
 
